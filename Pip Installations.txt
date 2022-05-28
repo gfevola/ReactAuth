@@ -1,0 +1,6 @@
+
+
+#for python files
+pip install Keras-Preprocessing
+pip install sklearn
+pip install gensim

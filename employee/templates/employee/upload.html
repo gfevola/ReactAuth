@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+	<head></head>
+	<body>
+		{% if messages %}
+		{% for msg in messages %}
+			<div class="alert alert-{{msg.tags}}">
+				{{msg}}
+			</div>
+		{% endfor %}
+		{% endif %}
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<label> Employee File </label>
+			<input type="file" name="empFile">
+			<label> model name </label>
+			<input type="text" name="modelname">
+			
+			<button type="submit" name="submitAll">Submit </button>
+		</form>
+	</body>
+</html>
