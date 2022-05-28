@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'djoser', #
     'accounts',
     'employee',
-    'jobdescriptions',
     'query',
     'fields'
 ]

@@ -25,7 +25,6 @@ urlpatterns = [
     path('api/accounts/', include('accounts.urls')),
     path('api/employee/', include('employee.urls')),
     path('api/fields/', include('fields.urls')),    
-    path('api/jd/', include('jobdescriptions.urls')),    
     path('admin', admin.site.urls),
     path("api/token/",jwt_views.TokenObtainPairView.as_view(),name="jwt_token"),
     path('api/query/', include('query.urls')),
